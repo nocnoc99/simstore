@@ -1,5 +1,5 @@
-# simstore by NhuNgoc
-# how to use
+## simstore by NhuNgoc
+## how to use
 ```
 npm start
 ```
