@@ -1,0 +1,56 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); -%>
+        <style>
+            html {
+                position: relative;
+                min-height: 100%;
+                padding-bottom: 80px;
+            }
+
+            header {
+                position: fixed;
+                width: 100%;
+            }
+
+            main {
+                padding: 100px;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+
+            body {
+                background-image: url('bg.jpg');
+            }
+        </style>
+</head>
+
+<body>
+
+    <header>
+        <%- include('../partials/header'); -%>
+    </header>
+
+    <main class="container">
+        <div class="container-fluid">
+            <h3>Nhu Ngoc SIM STORE</h3>
+            <h4>Chủ cửa hàng: Hồ Thị Như Ngọc</h4>
+            <h4>MSSV: 122170035</h4>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); -%>
+    </footer>
+
+</body>
+
+</html>

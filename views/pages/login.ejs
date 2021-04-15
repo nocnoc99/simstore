@@ -1,0 +1,42 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); -%>
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                background: url('mse-login-bg.jpg');
+                background-repeat: space;
+            }
+        </style>
+</head>
+
+<body class="container d-flex justify-content-center">
+
+    <div style="width: 80%; height: 40%; margin: auto 0 auto 0;">
+        <form style="width: 50%; margin: auto;" class="form-signin" action="/api/login">
+            <h2 class="form-signin-heading text-white">Please sign in</h2>
+
+            <!-- <label for="inputEmail" class="sr-only">Username</label> -->
+            <input style="margin-bottom: 5px;" type="username" id="inputEmail" name="username" class="form-control"
+                placeholder="Username" required autofocus>
+
+            <!-- <label for="inputPassword" class="sr-only">Password</label> -->
+            <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password"
+                required>
+
+            <br />
+
+            <button class="btn btn-primary btn-lg btn-default btn-block text-white" type="submit">Sign in</button>
+        </form>
+    </div>
+</body>
+
+</html>
